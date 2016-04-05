@@ -1,0 +1,13 @@
+{{#link-to 'committee'}}Back to Committee List{{/link-to}}
+{{#each model.house as |house|}}
+  <h2>{{house.name}}</h2>
+  <p>Office: {{house.office}}</p>
+  <p>Phone: {{house.phone}}</p>
+
+<h3>Subcommittees (if it has any):</h3>
+{{/each}}
+<ul>
+  {{#each model.subcom as |subcom|}}
+    <li>{{subcom.name}}</li>
+  {{/each}}
+</ul>

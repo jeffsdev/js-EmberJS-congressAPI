@@ -1,8 +1,16 @@
-<h2>Committees in your area.</h2>
+<h2>Senate, House, and Joint Committees</h2>
+{{#link-to 'index'}}Back to Home{{/link-to}}
 
+<h3>House Committees</h3>
 <ul>
-  {{#each model as |committee|}}
-    <li> {{committee.name}}</li>
+  {{#each model.house as |house|}}
+    <li>{{#link-to 'house-sub' house.committee_id}}{{house.name}}{{/link-to}}</li>
   {{/each}}
 </ul>
-{{#link-to 'index'}}Back to Home{{/link-to}}
+
+<h3>Senate Committees</h3>
+<ul>
+  {{#each model.senate as |senate|}}
+    <li>{{senate.name}}</li>
+  {{/each}}
+</ul>
