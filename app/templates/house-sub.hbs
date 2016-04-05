@@ -1,4 +1,12 @@
-{{#link-to 'committee'}}Back to Committee List{{/link-to}}
+<div class="nav">
+  <div class="nav-container">
+    {{#link-to 'committee'}}Back to Committee List{{/link-to}}
+  </div>
+</div>
+<div class="container">
+
+
+
 {{#each model.house as |house|}}
   <h2>{{house.name}}</h2>
   <p>Office: {{house.office}}</p>
@@ -11,3 +19,6 @@
     <li>{{subcom.name}}</li>
   {{/each}}
 </ul>
+
+
+</div>

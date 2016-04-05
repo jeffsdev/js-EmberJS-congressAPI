@@ -1,3 +1,93 @@
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: sans-serif;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  background: #ccc;
+}
+#title a {
+  text-decoration: none;
+}
+
+
+.container {
+  width: 80%;
+  min-width: 350px;
+  margin: auto;
+  padding: 50px;
+}
+
+.nav {
+  height: 50px;
+  background: #999;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  font-size: 1.17rem;
+  width: 80%;
+  margin: auto;
+  height: 100%;
+}
+
+.nav-container a {
+  text-decoration: none;
+}
+
+.feature-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 200px;
+  min-width: 450px;
+  margin-top: 25px;
+}
+.leg-lookup {
+  background: #abafc5;
+}
+.leg-lookup h2 {
+  margin-top: 0;
+}
+.com-lookup {
+  background: #809595;
+}
+
+form {
+ display: flex;
+ align-items: center;
+}
+
+form input {
+  width: 200px;
+  height: 40px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin-right: 10px;
+  padding: 0 10px;
+  font-size: 1.17rem;
+}
+
+form button {
+  font-size: 1.17rem;
+  width: 100px;
+  height: 40px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background: #79c;
+  color: #fff;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #89f;
 }
