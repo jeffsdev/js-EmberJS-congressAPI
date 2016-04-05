@@ -20,9 +20,7 @@ header {
 
 .container {
   width: 80%;
-  min-width: 350px;
   margin: auto;
-  padding: 50px;
 }
 
 .nav {

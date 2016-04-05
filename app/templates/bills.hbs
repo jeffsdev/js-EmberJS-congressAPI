@@ -1,0 +1,17 @@
+<div class="nav">
+  <div class="nav-container">
+    {{#link-to 'index'}}Back to Home{{/link-to}}
+  </div>
+</div>
+<div class="container">
+
+  <h2>Recent Bills</h2>
+
+  <ul>
+    {{#each model.bill as |bill|}}
+      <li>{{bill.official_title}}</li>
+    {{/each}}
+  </ul>
+
+
+</div>
